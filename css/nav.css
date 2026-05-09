@@ -73,6 +73,117 @@ nav #nav_buttons{
     opacity: 1;
 }
 
+#burger{
+
+    display: none;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+
+
+#mobile_top{
+
+    display: contents;
+}
+
+
+
+#nav_logo{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media(max-width: 768px){
+
+    nav{
+
+        padding: 1.2rem 1.5rem;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 0;
+    }
+
+
+
+    #mobile_top{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+    #burger{
+
+        display: block;
+    }
+
+
+
+    #nav_logo{
+
+        display: none;
+    }
+
+
+
+    #nav_buttons{
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 1.5rem;
+
+        overflow: hidden;
+
+        max-height: 0;
+
+        opacity: 0;
+
+        padding-top: 0;
+
+        transition:
+        max-height .4s ease,
+        opacity .3s ease,
+        padding .3s ease;
+    }
+
+
+
+    #nav_buttons.active{
+
+        max-height: 300px;
+
+        opacity: 1;
+
+        padding-top: 2rem;
+    }
+
+
+
+    #nav_buttons a{
+
+        font-size: 1rem;
+    }
+
+
+
+    #search_input.active{
+
+        width: 140px;
+    }
+
+}
+
 @media(max-width: 768px){
     nav{
         justify-content: center;

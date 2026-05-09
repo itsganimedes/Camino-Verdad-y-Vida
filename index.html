@@ -19,26 +19,40 @@
 </head>
 <body>
     <nav>
-        <div style="display: flex;
-        flex-direction: row;
-        gap: 1rem;">
-            <i class="fa-solid fa-mountain-sun"></i>
-            <p>Deeper</p></div>
-        <div id="nav_buttons">
-            <a href="#">INICIO</a>
-            <a href="#">SOBRE NOSOTROS</a>
-            <a href="#">CONTACTO</a>
-        </div>
-        <div id="search_container">
-            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
 
-            <input 
-                type="text" 
-                id="search_input"
-                placeholder="Buscar..."
-            >
+        <div id="mobile_top">
+
+            <i class="fa-solid fa-bars" id="burger"></i>
+
+            <div id="nav_logo">
+
+                <i class="fa-solid fa-mountain-sun"></i>
+                <p>Deeper</p>
+
+            </div>
+
+            <div id="nav_buttons">
+
+                <a href="index.html">INICIO</a>
+                <a href="about.html">SOBRE NOSOTROS</a>
+                <a href="#">CONTACTO</a>
+
+            </div>
+
+            <div id="search_container">
+                <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+
+                <input 
+                    type="text" 
+                    id="search_input"
+                    placeholder="Buscar..."
+                >
+            </div>
+
         </div>
+
     </nav>
+
     <header>
         <div id="h_content">
             <img src="img/leaf.png" alt="leaf">
@@ -1525,6 +1539,7 @@
     </main>
 
     <script src="js/search.js"></script>
+    <script src="js/hamburger.js"></script>
 
     <footer>
 
