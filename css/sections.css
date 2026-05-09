@@ -1,0 +1,169 @@
+section{
+    padding: 2rem 7rem;
+}
+
+section p{
+    text-align: justify;
+}
+
+#comfort_search{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 2rem;
+
+    padding: 6rem 2rem;
+
+    color: rgb(7, 7, 7);
+}
+
+
+
+.comfort_title{
+
+    font-size: 2.3rem;
+    font-family: 'Playfair Display';
+
+    max-width: 700px;
+
+    line-height: 1.3;
+}
+
+
+
+.comfort_desc{
+
+    color: rgba(19, 19, 19, 0.7);
+
+    max-width: 700px;
+
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+
+#comfort_input_container{
+
+    width: 100%;
+    max-width: 700px;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem 1.5rem;
+
+    border-radius: 5rem;
+
+    background: rgba(255,255,255,.06);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    backdrop-filter: blur(10px);
+}
+
+
+
+#comfort_input_container i{
+
+    color: rgba(19, 19, 19, 0.6);
+
+    font-size: 1.1rem;
+}
+
+
+
+#main_search{
+
+    flex: 1;
+
+    background: transparent;
+
+    border-radius: 8px;
+    padding: 0 1rem;
+    border-width: 0.1px;
+
+    border: none;
+    outline: none;
+
+    color: rgba(19, 19, 19, 0.6);
+
+    font-size: 1rem;
+
+    font-family: 'Poppins';
+}
+
+
+
+#main_search::placeholder{
+
+    color: rgba(19, 19, 19, 0.6);
+}
+
+#search_btn{
+
+    border: none;
+    outline: none;
+
+    background: rgb(236, 225, 162);
+
+    color: rgb(40,40,40);
+
+    padding: .9rem 1.4rem;
+
+    border-radius: 3rem;
+
+    font-family: 'Poppins';
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s ease;
+}
+
+
+
+#search_btn:hover{
+
+    transform: scale(1.03);
+
+    background: rgb(255, 242, 166);
+}
+
+#no_results_message{
+
+    margin-top: 2rem;
+
+    color: rgba(255, 0, 0, 0.7);
+
+    font-style: italic;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: .4s ease;
+
+    pointer-events: none;
+}
+
+
+
+#no_results_message.show{
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+@media (max-width: 450px) {
+    #comfort_input_container{
+        flex-direction: column;
+    }
+}

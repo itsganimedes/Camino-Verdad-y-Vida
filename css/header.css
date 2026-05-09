@@ -1,0 +1,74 @@
+header{
+    background: linear-gradient(to right,rgb(48, 6, 6), rgb(75, 15, 15));
+    color: white;
+    padding: 10rem 7rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#h_content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+header img{
+    width: 50%;
+    position: absolute;
+    right: -5rem;
+    top: 0;
+    opacity: 0.5;
+}
+
+header img:hover{
+    opacity: 0.8;
+    transform: rotate(2deg);
+}
+
+header h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 768px){
+
+    header{
+        padding: 5rem 7rem;
+    }
+
+    #h_content{
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        gap: 2rem;
+    }
+
+    header h1{
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    header h3{
+        font-size: 1rem;
+    }
+
+    header .desc{
+        font-size: .95rem;
+        line-height: 1.7;
+    }
+
+
+
+    header img{
+
+        width: 120%;
+
+        right: -10rem;
+        top: 4rem;
+
+        opacity: 0.12;
+
+        pointer-events: none;
+    }
+}
