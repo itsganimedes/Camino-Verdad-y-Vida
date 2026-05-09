@@ -135,7 +135,7 @@ main{
 
 .about_section{
 
-    width: 900px;
+    width: 70%;
 
     margin: auto;
 
@@ -227,7 +227,7 @@ footer{
 
 
     .about_section{
-
+        width: 90%;
         padding: 2rem;
     }
 
