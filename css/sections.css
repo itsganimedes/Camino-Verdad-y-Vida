@@ -162,6 +162,12 @@ section p{
     transform: translateY(0);
 }
 
+@media(max-width: 768px){
+    section{
+        padding: 2rem 3rem;
+    }
+}
+
 @media (max-width: 450px) {
     #comfort_input_container{
         flex-direction: column;

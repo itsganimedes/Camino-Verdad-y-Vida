@@ -34,7 +34,7 @@ header h1{
 @media(max-width: 768px){
 
     header{
-        padding: 5rem 7rem;
+        padding: 5rem 3rem;
     }
 
     #h_content{
