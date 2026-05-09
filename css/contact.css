@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Poppins';
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgb(28, 4, 4),
+        rgb(10, 10, 10)
+    );
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+#contact_container{
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+#contact_card{
+
+    width: 100%;
+    max-width: 700px;
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.06);
+
+    backdrop-filter: blur(14px);
+
+    border-radius: 2rem;
+
+    padding: 4rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 2rem;
+}
+
+
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+#contact_logo{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    color: rgb(236, 225, 162);
+
+    font-size: 1.3rem;
+}
+
+
+
+/* ========================= */
+/* TITULO */
+/* ========================= */
+
+#contact_card h1{
+
+    font-size: 3rem;
+
+    font-family: 'Playfair Display';
+}
+
+
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.contact_desc{
+
+    color: rgba(255,255,255,.72);
+
+    line-height: 1.9;
+
+    max-width: 550px;
+}
+
+
+
+/* ========================= */
+/* BOTÓN WHATSAPP */
+/* ========================= */
+
+#whatsapp_btn{
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    text-decoration: none;
+
+    background: rgb(236, 225, 162);
+
+    color: rgb(30,30,30);
+
+    padding: 1rem 2rem;
+
+    border-radius: 5rem;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+
+
+#whatsapp_btn:hover{
+
+    transform: scale(1.04);
+
+    box-shadow:
+    0 0 30px rgba(236,225,162,.15);
+}
+
+
+
+#whatsapp_btn i{
+
+    font-size: 1.3rem;
+}
+
+
+
+/* ========================= */
+/* NOTA FINAL */
+/* ========================= */
+
+#contact_note{
+
+    color: rgba(255,255,255,.45);
+
+    font-style: italic;
+
+    line-height: 1.8;
+}
+
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width: 768px){
+
+    #contact_card{
+
+        padding: 3rem 2rem;
+    }
+
+
+
+    #contact_card h1{
+
+        font-size: 2.3rem;
+    }
+
+}
